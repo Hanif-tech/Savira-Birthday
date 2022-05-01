@@ -293,3 +293,14 @@ footer {
 .hide {
   display: none;
 }
+
+.item {
+  margin-bottom: 6px;
+}
+.modal {
+  .modal-body {
+    video {
+      width: 100%;
+    }
+  }
+}
