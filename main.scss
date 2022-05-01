@@ -1,0 +1,295 @@
+html {
+  scroll-behavior: smooth;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #ffffff;
+  font-family: "Nunito", sans-serif;
+}
+
+// text running
+.logo {
+  padding: 5px 10px;
+  position: relative;
+  padding-top: 0;
+  padding: 26px 21px;
+  background-color: #ffecce;
+  p {
+    color: #292929;
+    font-size: 30px;
+    font-weight: 500;
+    display: inline-block;
+    // overflow: hidden;
+    position: absolute;
+    animation: marquee 15s linear infinite;
+    top: 0;
+  }
+}
+
+#navbar,
+#navbarId {
+  position: fixed;
+  width: 100%;
+  transition: top 0.3s;
+  z-index: 999;
+}
+#navbar {
+  top: 42px;
+  background-color: #ffecce;
+}
+#navbarId {
+  top: 0px;
+}
+
+.navbar {
+  transition-property: transform;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-in-out;
+  transition-delay: 0s;
+  .navbar-brand {
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 30px;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: #474747;
+  }
+  .nav-item {
+    padding: 3px 8px;
+    margin-left: 12px;
+    .nav-link {
+      font-weight: 600;
+      font-size: 18px;
+    }
+    &:hover {
+      padding: 3px 8px;
+      background-color: rgb(124, 124, 124);
+      border-radius: 22px;
+      .nav-link {
+        color: #e6e6e6;
+      }
+    }
+  }
+}
+img {
+  width: 100%;
+  background-size: cover;
+  background-position-y: center;
+}
+
+.kotak {
+  position: relative;
+  overflow: hidden;
+  max-height: 400px;
+
+  img {
+    object-fit: cover;
+    object-position: 100% -18px;
+  }
+  .body {
+    position: absolute;
+    background-color: black;
+    align-items: flex-e;
+    bottom: 0px;
+    left: 0;
+    width: 100%;
+    height: 25%;
+    background: linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.774));
+    padding: 55px 20px 0px 20px;
+
+    p {
+      color: wheat;
+      font-size: 14px;
+      font-weight: 600;
+    }
+  }
+
+  &:hover {
+    img {
+      transition: 1s ease;
+      transform: scale(1.1);
+    }
+  }
+}
+
+.hover {
+  padding: 3px 8px;
+  background-color: rgb(75, 75, 75);
+  border-radius: 22px;
+  .nav-link {
+    color: #ebebeb;
+  }
+}
+.content {
+  margin-top: 0px;
+  .galleri {
+    font-weight: 700;
+    font-size: 40px;
+    color: #474747;
+  }
+}
+
+// .marquee {
+//   position: fixed;
+//   height: 35px;
+//   width: 100%;
+
+//   overflow: hidden;
+//   position: relative;
+//   background-color: #000000;
+//   border-top: 1px solid black;
+//   border-bottom: 1px solid black;
+//   padding: 8px 0 4px 0;
+// }
+
+// .marquee div {
+//   display: inline-block;
+//   width: 300%;
+//   height: 40px;
+
+//   position: absolute;
+//   overflow: hidden;
+
+//   animation: marquee 12s linear infinite;
+// }
+
+// .marquee span {
+//   float: left;
+//   width: 25%;
+// }
+
+//animasi text running
+@keyframes marquee {
+  0% {
+    left: 1400px;
+  }
+  100% {
+    left: -300px;
+  }
+}
+
+.profile {
+  border: 3px solid rgb(141, 141, 141);
+  margin-top: 70px;
+  width: 300px;
+  border-radius: 100%;
+  height: 280px;
+  background-size: cover;
+  object-fit: cover;
+  object-position: center;
+}
+.profile-title {
+  h3 {
+    font-size: 60px;
+    font-weight: 700;
+  }
+}
+.profile-sub-title {
+  h4 {
+    font-weight: 600;
+  }
+}
+.savira {
+  padding-bottom: 100px;
+  padding-top: 150px;
+  background-color: #f0f0f0;
+}
+.pesan {
+  font-weight: 500;
+  font-size: 20px;
+  text-align: center;
+}
+.title {
+  font-weight: 700;
+  font-size: 40px;
+}
+.section-pesan {
+  margin-top: 100px;
+}
+footer {
+  margin-top: 100px;
+  background-color: #ffecce;
+  padding: 12px;
+}
+.callout {
+  position: fixed;
+  bottom: -150px;
+  right: 20px;
+  margin-left: 20px;
+  max-width: 300px;
+  transition: 1s ease;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgb(190, 190, 190);
+}
+.callout-show {
+  bottom: 30px;
+}
+
+/* Callout header */
+.callout-header {
+  padding: 18px 15px;
+  background: #ffecce;
+  font-size: 26px;
+  color: #474747;
+  font-weight: 600;
+  position: relative;
+  border-radius: 10px 10px 0 0;
+}
+
+/* Callout container/body */
+.callout-container {
+  border-radius: 0 0 10px 10px;
+  padding: 22px 15px;
+  background-color: rgb(204, 204, 204);
+  color: rgb(63, 63, 63);
+}
+
+/* Close button */
+.closebtn {
+  position: absolute;
+  top: -3px;
+  right: 8px;
+  color: #474747;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+/* Change color on mouse-over */
+.closebtn:hover {
+  color: lightgrey;
+}
+
+// hidden message
+.message {
+  width: 240px;
+  background-color: #4ff3ff;
+  position: fixed;
+  bottom: 0px;
+  right: 20px;
+  border-radius: 5px 5px 0 0;
+  cursor: pointer;
+  .body {
+    padding: 8px 15px;
+    p {
+      font-size: 14px;
+      font-weight: 500;
+      color: #292929;
+    }
+  }
+  span {
+    position: absolute;
+    font-size: 10px;
+    top: -5px;
+    right: 0px;
+    color: #f0f0f0;
+    padding: 2px 6px;
+    border-radius: 50%;
+    background-color: rgb(255, 119, 119);
+  }
+}
+.hide {
+  display: none;
+}

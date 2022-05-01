@@ -1,0 +1,312 @@
+html {
+  scroll-behavior: smooth;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #ffffff;
+  font-family: "Nunito", sans-serif;
+}
+
+.logo {
+  padding: 5px 10px;
+  position: relative;
+  padding-top: 0;
+  padding: 26px 21px;
+  background-color: #ffecce;
+}
+
+.logo p {
+  color: #292929;
+  font-size: 30px;
+  font-weight: 500;
+  display: inline-block;
+  position: absolute;
+  -webkit-animation: marquee 15s linear infinite;
+          animation: marquee 15s linear infinite;
+  top: 0;
+}
+
+#navbar,
+#navbarId {
+  position: fixed;
+  width: 100%;
+  -webkit-transition: top 0.3s;
+  transition: top 0.3s;
+  z-index: 999;
+}
+
+#navbar {
+  top: 42px;
+  background-color: #ffecce;
+}
+
+#navbarId {
+  top: 0px;
+}
+
+.navbar {
+  -webkit-transition-property: -webkit-transform;
+  transition-property: -webkit-transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+  -webkit-transition-timing-function: ease-in-out;
+          transition-timing-function: ease-in-out;
+  -webkit-transition-delay: 0s;
+          transition-delay: 0s;
+}
+
+.navbar .navbar-brand {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 30px;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: #474747;
+}
+
+.navbar .nav-item {
+  padding: 3px 8px;
+  margin-left: 12px;
+}
+
+.navbar .nav-item .nav-link {
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.navbar .nav-item:hover {
+  padding: 3px 8px;
+  background-color: #7c7c7c;
+  border-radius: 22px;
+}
+
+.navbar .nav-item:hover .nav-link {
+  color: #e6e6e6;
+}
+
+img {
+  width: 100%;
+  background-size: cover;
+  background-position-y: center;
+}
+
+.kotak {
+  position: relative;
+  overflow: hidden;
+  max-height: 400px;
+}
+
+.kotak img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 100% -18px;
+     object-position: 100% -18px;
+}
+
+.kotak .body {
+  position: absolute;
+  background-color: black;
+  -webkit-box-align: flex-e;
+      -ms-flex-align: flex-e;
+          align-items: flex-e;
+  bottom: 0px;
+  left: 0;
+  width: 100%;
+  height: 25%;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), to(rgba(0, 0, 0, 0.774)));
+  background: linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.774));
+  padding: 55px 20px 0px 20px;
+}
+
+.kotak .body p {
+  color: wheat;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.kotak:hover img {
+  -webkit-transition: 1s ease;
+  transition: 1s ease;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.hover {
+  padding: 3px 8px;
+  background-color: #4b4b4b;
+  border-radius: 22px;
+}
+
+.hover .nav-link {
+  color: #ebebeb;
+}
+
+.content {
+  margin-top: 0px;
+}
+
+.content .galleri {
+  font-weight: 700;
+  font-size: 40px;
+  color: #474747;
+}
+
+@-webkit-keyframes marquee {
+  0% {
+    left: 1400px;
+  }
+  100% {
+    left: -300px;
+  }
+}
+
+@keyframes marquee {
+  0% {
+    left: 1400px;
+  }
+  100% {
+    left: -300px;
+  }
+}
+
+.profile {
+  border: 3px solid #8d8d8d;
+  margin-top: 70px;
+  width: 300px;
+  border-radius: 100%;
+  height: 280px;
+  background-size: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+.profile-title h3 {
+  font-size: 60px;
+  font-weight: 700;
+}
+
+.profile-sub-title h4 {
+  font-weight: 600;
+}
+
+.savira {
+  padding-bottom: 100px;
+  padding-top: 150px;
+  background-color: #f0f0f0;
+}
+
+.pesan {
+  font-weight: 500;
+  font-size: 20px;
+  text-align: center;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 40px;
+}
+
+.section-pesan {
+  margin-top: 100px;
+}
+
+footer {
+  margin-top: 100px;
+  background-color: #ffecce;
+  padding: 12px;
+}
+
+.callout {
+  position: fixed;
+  bottom: -150px;
+  right: 20px;
+  margin-left: 20px;
+  max-width: 300px;
+  -webkit-transition: 1s ease;
+  transition: 1s ease;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 0 10px #bebebe;
+          box-shadow: 0 0 10px #bebebe;
+}
+
+.callout-show {
+  bottom: 30px;
+}
+
+/* Callout header */
+.callout-header {
+  padding: 18px 15px;
+  background: #ffecce;
+  font-size: 26px;
+  color: #474747;
+  font-weight: 600;
+  position: relative;
+  border-radius: 10px 10px 0 0;
+}
+
+/* Callout container/body */
+.callout-container {
+  border-radius: 0 0 10px 10px;
+  padding: 22px 15px;
+  background-color: #cccccc;
+  color: #3f3f3f;
+}
+
+/* Close button */
+.closebtn {
+  position: absolute;
+  top: -3px;
+  right: 8px;
+  color: #474747;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+/* Change color on mouse-over */
+.closebtn:hover {
+  color: lightgrey;
+}
+
+.message {
+  width: 240px;
+  background-color: #4ff3ff;
+  position: fixed;
+  bottom: 0px;
+  right: 20px;
+  border-radius: 5px 5px 0 0;
+  cursor: pointer;
+}
+
+.message .body {
+  padding: 8px 15px;
+}
+
+.message .body p {
+  font-size: 14px;
+  font-weight: 500;
+  color: #292929;
+}
+
+.message span {
+  position: absolute;
+  font-size: 10px;
+  top: -5px;
+  right: 0px;
+  color: #f0f0f0;
+  padding: 2px 6px;
+  border-radius: 50%;
+  background-color: #ff7777;
+}
+
+.hide {
+  display: none;
+}
+/*# sourceMappingURL=main.css.map */
