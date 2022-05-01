@@ -234,8 +234,8 @@ footer {
   -webkit-transition: 1s ease;
   transition: 1s ease;
   border-radius: 10px;
-  -webkit-box-shadow: 0 0 10px #bebebe;
-          box-shadow: 0 0 10px #bebebe;
+  -webkit-box-shadow: 0 0 4px #3f3f3f;
+          box-shadow: 0 0 4px #3f3f3f;
 }
 
 .callout-show {
