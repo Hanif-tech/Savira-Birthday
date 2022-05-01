@@ -216,6 +216,7 @@ img {
 
 .section-pesan {
   margin-top: 100px;
+  padding-bottom: 100px;
 }
 
 footer {
@@ -316,5 +317,9 @@ footer {
 
 .modal .modal-body video {
   width: 100%;
+}
+
+#galeri {
+  scroll-margin: 85px;
 }
 /*# sourceMappingURL=main.css.map */
